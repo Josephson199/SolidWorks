@@ -6,12 +6,12 @@ namespace DIP_Check
     {
         static void Main(string[] args)
         {
-            var empManager = new EmployeeManager();
-            empManager.AddEmployee(new Employee { Name = "Leen", Gender = Gender.Female, Position = Position.Manager });
-            empManager.AddEmployee(new Employee { Name = "Mike", Gender = Gender.Male, Position = Position.Administrator });
+            var bookingManager = new BookingManager();
+            bookingManager.AddBooking(new Booking { Name = "Säkra lyft", Type = Type.VR, Status = Status.InProgress });
+            bookingManager.AddBooking(new Booking { Name = "Truckkörkort", Type = Type.Online, Status = Status.Completed });
 
-            var stats = new EmployeeStatistics(empManager);
-            Console.WriteLine($"Number of female managers in our company is: {stats.CountFemaleManagers()}");
+            var stats = new BookingStatitistics(bookingManager);
+            Console.WriteLine($"Number of VR bookings in progress: {stats.CountInProgressVrBookings()}");
         }
     }
 }
