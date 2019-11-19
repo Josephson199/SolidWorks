@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SRP", "SRP\SRP.csproj", "{4
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LSP", "LSP\LSP.csproj", "{23529549-AC73-439A-9222-CC0F66CF5EBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIP", "DIP\DIP.csproj", "{C8B09E8D-5B0E-4153-A244-7528E9CD1531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIP_Check", "DIP_Check\DIP_Check.csproj", "{B8E4C17A-0DC2-436D-9688-ECE6FB2E1178}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{23529549-AC73-439A-9222-CC0F66CF5EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23529549-AC73-439A-9222-CC0F66CF5EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23529549-AC73-439A-9222-CC0F66CF5EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B09E8D-5B0E-4153-A244-7528E9CD1531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B09E8D-5B0E-4153-A244-7528E9CD1531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B09E8D-5B0E-4153-A244-7528E9CD1531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B09E8D-5B0E-4153-A244-7528E9CD1531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8E4C17A-0DC2-436D-9688-ECE6FB2E1178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E4C17A-0DC2-436D-9688-ECE6FB2E1178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E4C17A-0DC2-436D-9688-ECE6FB2E1178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E4C17A-0DC2-436D-9688-ECE6FB2E1178}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

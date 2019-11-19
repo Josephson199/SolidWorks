@@ -1,0 +1,27 @@
+﻿The basic idea behind the Dependency Inversion Principle is that we should create the higher-level modules with its complex 
+logic in such a way to be reusable and unaffected by any change from the lower level modules in our application. To achieve this kind of behavior in our apps, 
+we introduce abstraction which decouples higher from lower-level modules.
+Having this idea in mind the Dependency Inversion Principle states that
+
+High-level modules should not depend on low-level modules, both should depend on abstractions.
+Abstractions should not depend on details. Details should depend on abstractions.
+We are going to make all of this easier to understand with an example and additional explanations.
+
+
+Well, first of all, our EmployeeStatistics class has a strong relation (coupled) to the EmployeeManager class and we can’t 
+send any other object in the EmployeeStatistics constructor except the EmployeeManager object. 
+The second problem is that we are using the public property from the low-level class inside the high-level class.
+By doing so, our low-level class can’t change its way of keeping track of employees. If we want to change its behavior to use a dictionary instead of a list,
+we need to change the EmployeeStatistics class behavior for sure.
+And that’s something we want to avoid if possible.
+
+Benefits of Implementing the Dependency Inversion Principle
+Reducing the number of dependencies among modules is an important part of the process of creating an application. 
+This is something that we get if we implement DIP correctly.
+Our classes are not tightly coupled with the lower-tier objects and we can easily reuse the logic from the high-tier modules.
+So, the main reason why DIP is so important is the modularity and reusability of the application modules.
+
+It is also important to mention that changing already implemented modules is risky. By depending on abstraction and not on a concrete implementation, 
+we can reduce that risk by not having to change high-level modules in our project.
+Finally, DIP when applied correctly gives us the flexibility and stability at the level of the entire architecture of our application.
+Our application will be able to evolve more securely and become stable and robust.
