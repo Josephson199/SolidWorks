@@ -15,7 +15,8 @@ public class FileSaver
 
 Definition
 While developing a project, we strive to write maintainable and readable code (beside the working part 😀 ). To accomplish this, each and every class should do its own task and do it well.
-Yes, it is quite important for a class to have no more than one task. If it does, our code becomes harder to maintain, due to the fact that it is responsible for the execution of several different tasks and thus being more likely to change in the future.
+Yes, it is quite important for a class to have no more than one task. If it does, our code becomes harder to maintain, 
+due to the fact that it is responsible for the execution of several different tasks and thus being more likely to change in the future.
 
 This is completely opposite of what the Single Responsibility Principle (SRP) states.
 
@@ -25,15 +26,15 @@ Simple as that.
 
 
 Problems With This Code
-We can add even more features in this class, like the Load or UploadToCloud methods because they are all related to our WorkReport, 
+We can add even more features in this class, like the Load or UploadToCloud methods because they are all related to our Booking, 
 but, just because we can doesn’t mean we have to do it.
-Right now, there is one issue with the WorkReport class.
+Right now, there is one issue with the Booking class.
 It has more than one responsibility.
 
 
-Its job is not only to keep track of our work report entries but to save the entire work report to a file.
+Its job is not only to keep track of our Booking Participants but to save the entire Booking to a file.
 This means that we are violating the SRP and our class has more than one reason to change in the future.
 
-The first reason to change this class is if we want to modify the way we keep track of our entries.But if we want to save a file in a different way, 
+The first reason to change this class is if we want to modify the way we keep track of our Participants. But if we want to save a file in a different way, 
 that is entirely a new reason to change our class. And imagine what this class would look like if we added additional functionalities to it.We would have so many unrelated code parts in a single class.
 So, in order to avoid that, let’s refactor the code.

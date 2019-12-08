@@ -28,6 +28,7 @@ namespace LSP
 
             SumCalculator evenSum2 = new EvenNumbersSumCalculator(numbers);
             Console.WriteLine($"The sum of all the even numbers: {evenSum2.Calculate()}");
+            Console.ReadKey();
 
             //As we can see, we are not getting the expected result because our variable evenSum is of type SumCalculator which is a higher order class (a base class). 
             //This means that the Count method from the SumCalculator will be executed.

@@ -9,9 +9,9 @@ namespace OCP_Check
         {
             var devCalculations = new List<BaseSalaryCalculator>
             {
-                new SeniorDevSalaryCalculator(new DeveloperReport("Dev1", "Senior developer") {Id = 1, HourlyRate = 300.5, WorkingHours = 160 }),
-                new JuniorDevSalaryCalculator(new DeveloperReport("Dev2", "Junior developer") {Id = 2, HourlyRate = 200, WorkingHours = 150 }),
-                new SeniorDevSalaryCalculator(new DeveloperReport("Dev3", "Senior developer") {Id = 3, HourlyRate = 300.5, WorkingHours = 180 })
+                new SeniorDevSalaryCalculator(new DeveloperReport("Ada Lovelace") {Id = 1, HourlyRate = 300.5, WorkingHours = 160, Level = Level.Senior }),
+                new JuniorDevSalaryCalculator(new DeveloperReport("Tim Berners-Lee") {Id = 2, HourlyRate = 200, WorkingHours = 150, Level = Level.Junior }),
+                new SeniorDevSalaryCalculator(new DeveloperReport("Alan Turing") {Id = 3, HourlyRate = 300.5, WorkingHours = 180, Level = Level.Senior })
             };
 
             var calculator = new SalaryCalculator(devCalculations);
